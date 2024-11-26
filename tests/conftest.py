@@ -1,9 +1,5 @@
 
-# from features.steps.common_steps import *
-# from features.steps.scrape_steps import *
-
 import pytest
-
 
 @pytest.fixture(scope="function")
 def context(browser):
