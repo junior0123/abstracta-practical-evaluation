@@ -5,8 +5,8 @@ import pytest
 def context(browser):
 
     context = browser.new_context(
-        viewport={"width": 1280, "height": 720},
-        user_agent="custom-agent"
+        user_agent="custom-agent",
+        noViewport = True,
     )
     yield context
     context.close()
