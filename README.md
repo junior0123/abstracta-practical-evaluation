@@ -22,6 +22,8 @@ If Python is not installed, you can download it from [python.org](https://www.py
 
    ```bash
    git clone git@github.com:junior0123/abstracta-practical-evaluation.git
+   ```
+   ```bash
    cd abstracta-practical-evaluation
    ```
 
@@ -59,6 +61,8 @@ If Python is not installed, you can download it from [python.org](https://www.py
 
    ```bash
    pip install -r requirements.txt
+   ```
+   ```bash
    playwright install
    ```
 
@@ -66,6 +70,23 @@ If Python is not installed, you can download it from [python.org](https://www.py
 
 To run the project follow these steps:
 
+## Configuring Execution:
+
+To configure the execution, create a `.env` file in the root project with the following parameters, for example:
+
+```env
+BASE_URL=https://demoblaze.com
+USER=123
+PASSWORD=123
+NAME=PEPE
+COUNTRY=BOLIVIA
+CITY=CBBA
+CREDIT_CARD_NUMBER="123456456-4123131"
+MONTH=04
+YEAR=2024
+```
+
+You can also add additional tests in the `/features/scenarios` directory to extend the test suite.
 1. **Run the main script:**
 
    ```bash
@@ -148,27 +169,8 @@ You can also combine as for example:
 pytest --headed --browser webkit
 ```
 ## Viewing Results:
-
-Test results are generated in the `/reports` folder. Open `report.html` to access detailed test outcomes. If any issues arise, check the logs in the `/log` directory. The result of the scraping will generate a `scraped_data.txt` file in the root of the project.
-
-## Configuring Execution:
-
-To configure the execution, create a `.env` file in the root project with the following parameters, for example:
-
-```env
-BASE_URL=https://demoblaze.com
-USER=123
-PASSWORD=123
-NAME=PEPE
-COUNTRY=BOLIVIA
-CITY=CBBA
-CREDIT_CARD_NUMBER="123456456-4123131"
-MONTH=04
-YEAR=2024
-```
-
-You can also add additional tests in the `/features/scenarios` directory to extend the test suite.
-
+The result of the scraping will generate a `scraped_data.txt` file in the root of the project.
+Test results are generated in the `/reports` folder. Open `report.html` to access detailed test outcomes. If any issues arise, check the logs in the `/log` directory. 
 
 ## About the Author 👨‍💻
 
